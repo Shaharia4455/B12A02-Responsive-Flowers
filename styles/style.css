@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.contain{
+    max-width: 1140px;
+    margin: 30px auto 0;
+}
+/* Shared style */
+.primary-color{
+    color: #E95A08;
+}
+.dark{
+    color: #000000;
+}
+.dark-gray{
+    color: rgba(0, 0, 0, 0.50);
+}
+/* navber styles */
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 48px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+/* Banner Section  */
+.banner{
+    display: flex;
+    margin: 120px 0;
+    align-items: end;
+}
+
+.banner h1{
+    font-weight: bold;
+    font-size: 64px;
+}
+.banner img{
+    display: block;
+}
+.banner p{
+    font-size: 22px;
+    margin-top: 13px;
+}
