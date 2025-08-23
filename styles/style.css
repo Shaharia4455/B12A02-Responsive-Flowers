@@ -58,14 +58,57 @@
     align-items: end;
 }
 
-.banner h1{
+.heading{
     font-weight: bold;
     font-size: 64px;
 }
 .banner img{
     display: block;
 }
-.banner p{
+.pregraph{
     font-size: 22px;
     margin-top: 13px;
 }
+ 
+
+
+ @media screen and (max-width: 576px) {
+    /* navber & banner */
+     .home{
+        display: none;
+    }
+    .navber{
+        width: 80%;
+        margin: 30px 16px;
+        text-align: center;
+        margin: auto;
+        align-content: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .nav-logo{
+        width: 63px;
+        height: 38px;
+    }
+     .banner-img{
+        width: 100%;
+     }
+     .heading{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin: 25px 16px 13px;
+     }
+     .banner-p{
+        font-size: 14px;
+        font-weight: 400;
+        width: 90%;
+        margin: auto 16px;
+        text-align: left;
+     }
+     
+
+ }
