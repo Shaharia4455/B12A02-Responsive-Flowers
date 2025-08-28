@@ -1,18 +1,15 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
 .inter-font {
@@ -21,199 +18,262 @@
   font-weight: 400;
   font-style: normal;
 }
-.contain{
-    max-width: 1140px;
-    margin: 30px auto 0;
+.contain {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 /* Shared style */
-.primary-color{
-    color: #E95A08;
+.primary-color {
+  color: #e95a08;
 }
-.dark{
-    color: #000000;
+.dark {
+  color: #000000;
 }
-.dark-gray{
-    color: rgba(0, 0, 0, 0.50);
+.dark-gray {
+  color: rgba(0, 0, 0, 0.5);
 }
-.center{
+/* .center{
     text-align: center;
+} */
+.section-gap {
+  margin-top: 60px;
+}
+.display-flex{
+  display: flex;
 }
 /* navber styles */
-.navber{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav-links{
-    display: flex;
-    gap: 48px;
+.nav-links {
+  display: flex;
+  gap: 48px;
 }
-.nav-item{
-    list-style: none;
+.nav-item {
+  list-style: none;
 }
-.nav-link{
-    text-decoration: none;
+.nav-link {
+  text-decoration: none;
 }
 /* Banner Section  */
-.banner{
-    display: flex;
-    margin: 120px auto;
-    align-items: flex-end;
+.banner {
+  display: flex;
+  margin: 120px auto;
+  align-items: flex-end;
 }
 
-.heading{
-    font-weight: bold;
-    font-size: 64px;
+.heading {
+  font-weight: bold;
+  font-size: 64px;
 }
-.banner img{
-    display: block;
+.banner img {
+  display: block;
 }
-.pregraph{
-    font-size: 22px;
-    margin-top: 13px;
+.pregraph {
+  font-size: 22px;
+  margin-top: 13px;
 }
 /* Our plants Section  */
-.plant{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+.plant {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-.plant-header{
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center; 
+.plant-header {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
 }
-.plant-p{
-    width: 100%;
-    margin:50px auto ;
-    text-align: center;
-    
+.plant-p {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
 }
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px 20px;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 20px;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    max-width: 270px;
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
 }
-.card-disceaption{
-    margin-top: 30px;
-} 
-.card-title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
+.card-disceaption {
+  margin-top: 30px;
 }
-.card-cost{
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 20px;
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
 }
-.primary-btn{
-    padding: 19px 80px;
-    border: none;
-    background-color: #E95A08;
-    color: white;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
-    height: 50px;
+.card-cost {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
 }
-
- @media screen and (max-width: 576px) {
-    /* navber & banner */
-     .home{
-        display: none;
-    }
-    .navber{
-        max-width: 361px;
-        margin: 30px 16px;
-        margin-top: 60px;
-        text-align: center;    
-    }
-    .banner-img{
-        max-width: 390px;
-    }
-    .banner{
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        margin:28px 0 65px;
-
-    }
-    .banner-left{
-        padding-left: 14px;
-      max-width: 361px;
-        text-align: center;
-        
-    }
-    .nav-logo{
-        width: 63px;
-        height: 38px;
-    }
-     .heading{
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 33px;
-        letter-spacing: 0%;
-        text-align: left;
-        margin-top: 25px;
-     }
-     .banner-p{
-        font-size: 14px;
-        font-weight: 400;
-        max-width: 360px;
-        margin: auto ;
-        text-align: left;
-     }
-     /* Our Plants Section */
-   
-     .plant{
-        max-width: 393px;
-        justify-content: center;
-     }
-     .plant-header{
-        font-size: 24px;
-        font-weight: 600;
-     }
-     .plant-p{
-        min-width: 336px;
-        font-size: 14px;
-        font-weight: 400;
-        text-align: center;
-        margin: 16px auto 28px;
-     }
-    .card-container{
-        max-width: 362px;
-        margin: 0 auto;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card-title,
-    .card-cost
-    {
-        font-size: 16px;
-    }
-    .primary-btn{
-        font-size: 16px;
-        padding: 19px 30px;
-    }
-     .card{
-        max-width: 170px;
-        max-height: 340px;
-        gap: 30px 20px;
-        margin: 30px 0;
-        justify-self: start;
-        /* align-items: self-start; */
-        /* margin-left: 14px;  */
-        /* max-width: 95%; */
-        /* justify-content: center; */
-        /* align-items: center; */
-     }  
-   
+.primary-btn {
+  padding: 19px 80px;
+  border: none;
+  background-color: #e95a08;
+  color: white;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+}
+/* Trusted seller section  */
+.trusted-container{
+    gap: 60px;
+    margin-top: 200px;
  }
+ .image-container{
+    position: relative;
+ }
+ .trusted-badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top: -110px;
+    right: -90px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+ }
+ .trusted-right{
+    margin: 40px auto;
+ }
+
+.trusted-title{
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: 700;
+}
+.trusted-list{
+ padding-left: 40px;
+}
+ .list-item{
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 20px;
+} 
+@media screen and (max-width: 576px) {
+  /* navber & banner */
+  .home {
+    display: none;
+  }
+  .navber {
+    max-width: 361px;
+    margin: 30px 16px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .banner-img {
+    max-width: 390px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 28px 0 65px;
+  }
+  .banner-left {
+    padding-left: 14px;
+    max-width: 361px;
+    text-align: center;
+  }
+  .nav-logo {
+    width: 63px;
+    height: 38px;
+  }
+  .heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 25px;
+  }
+  .banner-p {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 360px;
+    margin: auto;
+    text-align: left;
+  }
+  /* Our Plants Section */
+
+  .plant {
+    max-width: 393px;
+    justify-content: center;
+  }
+  .plant-header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .plant-p {
+    min-width: 336px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 16px auto 28px;
+  }
+  .card-container {
+    max-width: 362px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-title,
+  .card-cost {
+    font-size: 16px;
+  }
+  .primary-btn {
+    font-size: 16px;
+    padding: 19px 30px;
+  }
+  .card {
+    max-width: 170px;
+    max-height: 340px;
+    gap: 30px 20px;
+    margin: 30px 0;
+  }
+  /* Trusted seller section  */
+.trusted-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 18px;
+    margin-top: 70px;
+}
+.trusted-badge{
+    display: none;
+}
+.image-container{
+    margin: 0 auto;
+}
+.store{
+    max-width: 360px;
+}
+.trusted-title{
+    font-size: 24px;
+    line-height: 33px;
+}
+.trusted-title br{
+    display: none;
+}
+.list-item{
+    font-size: 14px;
+    line-height: 17px;
+}
+.trusted-list{
+ padding-left: 20px;
+}
+.trusted-right{
+    max-width: 361px;
+}
+.trusted-right{
+    margin: 0 auto;
+}
+}
