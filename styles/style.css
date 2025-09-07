@@ -18,6 +18,10 @@
   font-weight: 400;
   font-style: normal;
 }
+.max-width{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .contain {
   max-width: 1140px;
   margin: 0 auto;
@@ -215,6 +219,52 @@
     grid-row: 1/3;
     height: 100%;
 }
+/* newslateer-section */
+.newslateer-section {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../assets/news-letter-bg.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 23px;
+ height: 533px;
+}
+.newslateer-section h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+.newslateer-from{
+  display: flex;
+  width: 70%;
+}
+.newslateer-from button {
+  background-color: #e95a08;
+  color: white;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 26px 50px;
+  border: none;
+  text-align: center;
+}
+.newslateer-from input[type="email"]{
+  width: 100%;
+  padding: 8px 20px;
+  outline: none;
+}
+.newslateer-from input[type="email"]::placeholder{
+ color: rgba(0, 0, 0, 0.5);
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0%;
+}
+
 @media screen and (max-width: 576px) {
   /* navber & banner */
   .home {
@@ -222,16 +272,17 @@
   }
   .navber {
     max-width: 361px;
-    margin: 30px 16px;
+    margin: 30px auto;
     margin-top: 60px;
     text-align: center;
+    align-items: center;
   }
   .banner-img {
     max-width: 390px;
   }
   .banner {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
     margin: 28px 0 65px;
   }
   .banner-left {
@@ -269,11 +320,10 @@
     font-weight: 600;
   }
   .plant-p {
-    min-width: 336px;
+    width: 340px;
     font-size: 14px;
     font-weight: 400;
-    text-align: center;
-    margin: 16px auto 28px;
+    margin: 16px auto 0;
   }
   .card-container {
     max-width: 362px;
@@ -330,4 +380,44 @@
   .trusted-right {
     margin: 0 auto;
   }
+  /* least dell section */
+  .deals-title {
+  margin: 130px auto 50px;
+  text-align: center;
+}
+.deals-p{
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  margin: 16px auto 0;
+  max-width: 340px;
+}
+.deals-title  br{
+  display: none;
+}
+.card-container-bg {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+.card-bg{
+  width: 366.22px;
+height: 206px;
+}
+/* newslateer-section */
+.newslateer-section{
+  width: 393px;
+  height: 275px;
+  margin: 40px auto 0;
+}
+.newslateer-section h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+.newslateer-from button {
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
 }
